@@ -1,0 +1,18 @@
+databaseChangeLog:
+
+  # create database tables
+  - include:
+      file: db/changelog/v-0.0.1/create/100001-author-create-changelog.sql
+
+  - include:
+      file: db/changelog/v-0.0.1/create/100002-book-create-changelog.sql
+
+
+
+  # insert rows to database tables
+
+  - include:
+      file: db/changelog/v-0.0.1/insert/200001-author-insert-changelog.sql
+
+  - include:
+      file: db/changelog/v-0.0.1/insert/200002-book-insert-changelog.sql
